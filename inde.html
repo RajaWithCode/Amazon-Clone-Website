@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main-container">
+        <div class="nav-container">
+            <div class="logo-container border">
+                <div class="logo"></div>
+            </div>
+            <div class="address-container border">
+                <div class="address-icon">
+                    <div class="icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                </div>
+                <div class="add-container">
+                    <div class="address-1">
+                    <div class="add">
+                        <p>Delivering to New Delhi 110043</p>
+                    </div>
+                </div>
+                <div class="address-2">
+                    <p>Update location</p>
+                </div>
+                </div>
+            </div>
+            <div class="search-container">
+                <div class="search-bar hover">
+                    <select id="category-select">
+                        <option value="all">All</option>
+                        <option value="products">Products</option>
+                        <option value="blogs">Blogs</option>
+                    </select>
+                    <input type="text" placeholder="Search Amazon.in">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass icon-2"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lang-wrapper border">
+                <div class="lang-btn">
+                  IN  EN ▾
+                </div>
+
+                <div class="lang-dropdown">
+                    <p class="title">Change Language</p>
+
+                    <label>
+                        <input type="radio" name="lang" checked>
+                        English - EN
+                    </label>
+
+                    <label>
+                        <input type="radio" name="lang">
+                        हिन्दी - HI
+                    </label>
+
+                    <label>
+                        <input type="radio" name="lang">
+                        தமிழ் - TA
+                    </label>
+
+                    <label>
+                        <input type="radio" name="lang">
+                        తెలుగు - TE
+                    </label>
+
+                    <label>
+                        <input type="radio" name="lang">
+                        ಕನ್ನಡ - KN
+                    </label>
+
+                    <label>
+                        <input type="radio" name="lang">
+                        മലയാളം - ML
+                    </label>
+
+                    <label>
+                        <input type="radio" name="lang">
+                        বাংলা - BN
+                    </label>
+
+                    <label>
+                        <input type="radio" name="lang">
+                        मराठी - MR
+                    </label>
+
+                    <hr>
+
+                    <p class="footer">
+                    🇮🇳 You are shopping on Amazon.in  
+                    <br>
+                    <a href="#">Change country/region</a>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="login-container border">
+                <div class="text-1">
+                    <p>Hello, sing in</p>
+                </div>
+                <div class="text-2">
+                    <p>Account & List</p>
+                </div>
+            </div>
+             <div class="login-container border">
+                <div class="text-1">
+                    <p>Return</p>
+                </div>
+                <div class="text-2">
+                    <p>& Order</p>
+                </div>
+            </div>
+            <div class="cart-container border">
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping cart-2"></i>
+                    <samp>Cart</samp>
+                </div>
+            </div>
+        </div>
+
+        <div class="second-nav-container">
+            <div class="all-icon">
+                <i class="fa-solid fa-bars"></i>All
+            </div>
+            <div class="two-container">
+                <nav class="navlist">
+                    <ul>
+                        <li><a href="#" class="border-line">Fresh</a></li>
+                        <li><a href="#" class="border-line">MX Player</a></li>
+                        <li><a href="#" class="border-line">Sell</a></li>
+                        <li><a href="#" class="border-line">BestSeller</a></li>
+                        <li><a href="#" class="border-line">Mobiles</a></li>
+                        <li><a href="#" class="border-line">Today's Deals</a></li>
+                        <li><a href="#" class="border-line">Customer Service</a></li>
+                        <li><a href="#" class="border-line">Prime</a></li>
+                        <li><a href="#" class="border-line">New Releases</a></li>
+                        <li><a href="#" class="border-line">Amazon Pay</a></li>
+                        <li><a href="#" class="border-line">Fashion</a></li>
+                        <li><a href="#" class="border-line">Electronics</a></li>
+                        <li><a href="#" class="border-line">Home & Kitchen</a></li>
+                        <li><a href="#" class="border-line">Books</a></li>
+                        <li><a href="#" class="border-line">Computer</a></li>
+                        <li><a href="#" class="border-line">Gift Cards</a></li>
+                        <li><a href="#" class="border-line">Beauty & Personal Care</a></li>
+                        <li><a href="#" class="border-line">Car & Motorbike</a></li>
+                        <li><a href="#" class="border-line">Toys & Games</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-container">
+        <div class="slider-container">
+            <div class="slider">
+                <img id="slideImage" src="images/banner1.jpg">
+                <button class="prev" onclick="prevSlide()">❮</button>
+                <button class="next" onclick="nextSlide()">❯</button>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <h2>Continue shopping deals</h2>
+                    <div class="card-grid">
+                        <img src="images/p1.jpg" style="height: 155px; padding: 10px;">
+                        <img src="images/p2.jpg" style="height: 155px; padding: 10px;">
+                        <img src="images/p3.jpg" style="height: 155px; padding: 10px;">
+                        <img src="images/p4.jpg" style="height: 155px; padding: 10px;">
+                    </div>
+                    <a href="#">See more deals</a>
+                </div>
+
+                <div class="card">
+                    <h2>Bulk order discounts + Up to 18% GST savings</h2>
+                    <div class="card-grid">
+                        <div class="item">
+                            <img src="images/p5.jpg" style="width: 150px; height: 100px; margin-top: 10px;">
+                            <span style="font-size: 14px; font-weight: 500;">Up to 45% off | Laptops</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p6.jpg" style="width: 150px; height: 100px; margin-top: 10px;">
+                            <span style="font-size: 14px; font-weight: 500;">Up to 60% off | Kitchen appliances</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p7.jpg" style="width: 150px; height: 100px;">
+                            <span style="font-size: 14px; font-weight: 500;">Min. 50% off | office furniture</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p8.jpg" style="width: 150px; height: 100px;">
+                            <span style="font-size: 12px; font-weight: 500;">Up to 60% off | for Business Purchases</span>
+                        </div>
+                    </div>
+                    <a href="#">Create a free account</a>
+                </div>
+
+                <div class="card">
+                    <h2>Appliances for your home | Up to 55% off</h2>
+                    <div class="card-grid">
+                       <div class="item">
+                            <img src="images/p9.jpg" style="width: 150px; height: 100px; margin-top: 10px;" >
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Air Conditioners</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p10.jpg" style="width: 150px; height: 100px; margin-top: 10px;">
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Refrigeratiors</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p11.jpg" style="width: 150px; height: 100px; margin-top: 20px;">
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Microwaves</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p12.jpg" style="width: 150px; height: 100px; margin-top: 20px;">
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Washing Machines</span>
+                        </div>
+                    </div>
+                    <a href="#" style="margin-top: 20px;">See more</a>
+                </div>
+
+                <div class="card">
+                    <h2>Starting ₹49 | Deals on home essentials</h2>
+                    <div class="card-grid">
+                        <div class="item">
+                            <img src="images/p5.jpg" style="width: 150px; height: 100px; margin-top: 10px;"><br>
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Cleaning supplies</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p6.jpg" style="width: 150px; height: 100px; margin-top: 10px;"><br>
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Bathroom accessories</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p7.jpg" style="width: 150px; height: 100px; margin-top: 20px;"><br>
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Home tools</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p8.jpg" style="width: 150px; height: 100px; margin-top: 20px;"><br>
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Wallpaper</span>
+                        </div>
+                    </div>
+                    <a href="#" style="margin-top: 20px;">Explore all</a>
+                </div>
+
+
+                <div class="card">
+                    <h2>Bulk order discounts + Up to 18% GST savings</h2>
+                    <div class="card-grid">
+                        <div class="item">
+                            <img src="images/p5.jpg" style="width: 150px; height: 100px; margin-top: 10px;">
+                            <span style="font-size: 14px; font-weight: 500;">Up to 45% off | Laptops</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p6.jpg" style="width: 150px; height: 100px; margin-top: 10px;">
+                            <span style="font-size: 14px; font-weight: 500;">Up to 60% off | Kitchen appliances</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p7.jpg" style="width: 150px; height: 100px;">
+                            <span style="font-size: 14px; font-weight: 500;">Min. 50% off | office furniture</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p8.jpg" style="width: 150px; height: 100px;">
+                            <span style="font-size: 12px; font-weight: 500;">Up to 60% off | for Business Purchases</span>
+                        </div>
+                    </div>
+                    <a href="#">Create a free account</a>
+                </div>
+
+                <div class="card">
+                    <h2>Appliances for your home | Up to 55% off</h2>
+                    <div class="card-grid">
+                       <div class="item">
+                            <img src="images/p9.jpg" style="width: 150px; height: 100px; margin-top: 10px;" >
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Air Conditioners</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p10.jpg" style="width: 150px; height: 100px; margin-top: 10px;">
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Refrigeratiors</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p11.jpg" style="width: 150px; height: 100px; margin-top: 20px;">
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Microwaves</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p12.jpg" style="width: 150px; height: 100px; margin-top: 20px;">
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Washing Machines</span>
+                        </div>
+                    </div>
+                    <a href="#" style="margin-top: 20px;">See more</a>
+                </div>
+
+                <div class="card">
+                    <h2>Starting ₹49 | Deals on home essentials</h2>
+                    <div class="card-grid">
+                        <div class="item">
+                            <img src="images/p5.jpg" style="width: 150px; height: 100px; margin-top: 10px;"><br>
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Cleaning supplies</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p6.jpg" style="width: 150px; height: 100px; margin-top: 10px;"><br>
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Bathroom accessories</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p7.jpg" style="width: 150px; height: 100px; margin-top: 20px;"><br>
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Home tools</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p8.jpg" style="width: 150px; height: 100px; margin-top: 20px;"><br>
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Wallpaper</span>
+                        </div>
+                    </div>
+                    <a href="#" style="margin-top: 20px;">Explore all</a>
+                </div>
+                
+                <div class="card">
+                    <h2>Starting ₹49 | Deals on home essentials</h2>
+                    <div class="card-grid">
+                        <div class="item">
+                            <img src="images/p5.jpg" style="width: 150px; height: 100px; margin-top: 10px;"><br>
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Cleaning supplies</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p6.jpg" style="width: 150px; height: 100px; margin-top: 10px;"><br>
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Bathroom accessories</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p7.jpg" style="width: 150px; height: 100px; margin-top: 20px;"><br>
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Home tools</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p8.jpg" style="width: 150px; height: 100px; margin-top: 20px;"><br>
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Wallpaper</span>
+                        </div>
+                    </div>
+                    <a href="#" style="margin-top: 20px;">Explore all</a>
+                </div>
+                <!-- <div class="card signin">
+                    <h3>Sign in for your best experience</h3>
+                    <button>Sign in securely</button>
+                </div> -->
+            </div>
+
+
+
+            <div class="bike-container">
+                <div class="bike2">
+                    <div class="slider-wrapper2">
+                        <div class="header" style="display: flex;">
+                            <h2 style="padding: 10px;">Starting ₹70,348 | From daily commutes to weekend thrills </h2>
+                            <a href="#"style="color: #007185; text-decoration: none; margin: 15px;" s>See all offers</a>
+                        </div>
+                        <button class="arrow left" onclick="slideLeft()">&#10094;</button>
+
+                        <div class="slider2" id="slider">
+                            <img src="/amzon project/images/bike1.jpg">
+                            <img src="/amzon project/images/bike1.jpg">
+                            <img src="/amzon project/images/bike1.jpg">
+                            <img src="/amzon project/images/bike1.jpg">
+                            <img src="/amzon project/images/bike1.jpg">
+                            <img src="/amzon project/images/bike1.jpg">
+                            <img src="/amzon project/images/bike1.jpg">
+                            <img src="/amzon project/images/bike1.jpg">
+                            <img src="/amzon project/images/bike1.jpg">
+                            <img src="/amzon project/images/bike1.jpg">
+                            <img src="/amzon project/images/bike1.jpg">
+                            <img src="/amzon project/images/bike1.jpg">
+                            <img src="/amzon project/images/bike1.jpg">
+                            <img src="/amzon project/images/bike1.jpg">
+                            <img src="/amzon project/images/bike1.jpg">
+                            <img src="/amzon project/images/bike1.jpg">
+                            <img src="/amzon project/images/bike1.jpg">
+                            <img src="/amzon project/images/bike1.jpg">
+                            <img src="/amzon project/images/bike1.jpg">
+                            <img src="/amzon project/images/bike1.jpg">
+                            <img src="/amzon project/images/bike1.jpg">
+                            <img src="/amzon project/images/bike1.jpg">
+                            <img src="/amzon project/images/bike1.jpg">
+                            <img src="/amzon project/images/bike1.jpg">
+                            <img src="/amzon project/images/bike1.jpg">
+                        </div>
+
+                        <button class="arrow right" onclick="slideRight()">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            
+            <div class="bike-container">
+                <div class="bike2">
+                    <div class="slider-wrapper2">
+                        <div class="header" style="display: flex;">
+                            <h2 style="padding: 10px;">Up to 60% off | Cookware, kitchen tool & more | Amazon Launchpad</h2>
+                            <a href="#"style="color: #007185; text-decoration: none; margin: 15px;" s>See all</a>
+                        </div>
+                        <button class="arrow left" onclick="slideLeft_1()">&#10094;</button>
+
+                        <div class="slider2" id="slider_1">
+                            <img src="/amzon project/images/pain.jpg">
+                            <img src="/amzon project/images/pain.jpg">
+                            <img src="/amzon project/images/pain.jpg">
+                            <img src="/amzon project/images/pain.jpg">
+                            <img src="/amzon project/images/pain.jpg">
+                            <img src="/amzon project/images/pain.jpg">
+                            <img src="/amzon project/images/pain.jpg">
+                            <img src="/amzon project/images/pain.jpg">
+                            <img src="/amzon project/images/pain.jpg">
+                            <img src="/amzon project/images/pain.jpg">
+                            <img src="/amzon project/images/pain.jpg">
+                           
+                        </div>
+
+                        <button class="arrow right" onclick="slideRight_1()">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cards2">
+                <div class="card">
+                    <h2>Continue shopping deals</h2>
+                    <div class="card-grid">
+                        <img src="images/p1.jpg" style="height: 155px; padding: 10px;">
+                        <img src="images/p2.jpg" style="height: 155px; padding: 10px;">
+                        <img src="images/p3.jpg" style="height: 155px; padding: 10px;">
+                        <img src="images/p4.jpg" style="height: 155px; padding: 10px;">
+                    </div>
+                    <a href="#">See more deals</a>
+                </div>
+
+                <div class="card">
+                    <h2>Bulk order discounts + Up to 18% GST savings</h2>
+                    <div class="card-grid">
+                        <div class="item">
+                            <img src="images/p5.jpg" style="width: 150px; height: 100px; margin-top: 10px;">
+                            <span style="font-size: 14px; font-weight: 500;">Up to 45% off | Laptops</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p6.jpg" style="width: 150px; height: 100px; margin-top: 10px;">
+                            <span style="font-size: 14px; font-weight: 500;">Up to 60% off | Kitchen appliances</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p7.jpg" style="width: 150px; height: 100px;">
+                            <span style="font-size: 14px; font-weight: 500;">Min. 50% off | office furniture</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p8.jpg" style="width: 150px; height: 100px;">
+                            <span style="font-size: 12px; font-weight: 500;">Up to 60% off | for Business Purchases</span>
+                        </div>
+                    </div>
+                    <a href="#">Create a free account</a>
+                </div>
+
+                <div class="card">
+                    <h2>Appliances for your home | Up to 55% off</h2>
+                    <div class="card-grid">
+                       <div class="item">
+                            <img src="images/p9.jpg" style="width: 150px; height: 100px; margin-top: 10px;" >
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Air Conditioners</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p10.jpg" style="width: 150px; height: 100px; margin-top: 10px;">
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Refrigeratiors</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p11.jpg" style="width: 150px; height: 100px; margin-top: 20px;">
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Microwaves</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p12.jpg" style="width: 150px; height: 100px; margin-top: 20px;">
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Washing Machines</span>
+                        </div>
+                    </div>
+                    <a href="#" style="margin-top: 20px;">See more</a>
+                </div>
+
+                <div class="card">
+                    <h2>Starting ₹49 | Deals on home essentials</h2>
+                    <div class="card-grid">
+                        <div class="item">
+                            <img src="images/p5.jpg" style="width: 150px; height: 100px; margin-top: 10px;"><br>
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Cleaning supplies</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p6.jpg" style="width: 150px; height: 100px; margin-top: 10px;"><br>
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Bathroom accessories</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p7.jpg" style="width: 150px; height: 100px; margin-top: 20px;"><br>
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Home tools</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/p8.jpg" style="width: 150px; height: 100px; margin-top: 20px;"><br>
+                            <span style="font-size: 14px; font-weight: 500; margin-top: -10px;">Wallpaper</span>
+                        </div>
+                    </div>
+                    <a href="#" style="margin-top: 20px;">Explore all</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="footer-container">
+        <div class="sign">
+            <div class="sign2" style="text-align: center; margin-top: 30px;">
+                <h2>See personalized recommendations</h2>
+                <!-- <button class="">Sign in</button> -->
+                <div class="sing-button" style="margin-top: 10px;">
+                    <span class="button">
+                        <a href="https://www.amazon.in/ap/signin?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fref%3Drhf_sign_in&openid.assoc_handle=inflex&openid.pape.max_auth_age=0">
+                            Sign in
+                        </a>
+                </span>
+                </div>
+                <div class="new-customer" style="padding: 10px;">
+                    New Customer? 
+                    <a href="#" style="text-decoration: none; color:#007185 ;">Start here.</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="back">
+           Back to tag
+        </div>
+
+
+        <div class="main-footer">
+            
+        </div>
+    </div>
+
+
+    <!-- <script src="script.js"></script> -->
+     <script>
+        let images = [
+            "images/banner1.jpg",
+            "images/banner2.jpg",
+            "images/banner3.jpg",
+            "images/banner4.jpg",
+            "images/banner5.jpg",
+        ];
+
+        let index = 0;
+
+        function nextSlide() {
+            index = (index + 1) % images.length;
+            document.getElementById("slideImage").src = images[index];
+        }
+
+        function prevSlide() {
+            index = (index - 1 + images.length) % images.length;
+            document.getElementById("slideImage").src = images[index];
+        }
+
+
+
+
+        let scrollAmount = 0;
+
+        function slideRight() {
+            const slider = document.getElementById("slider");
+            scrollAmount += 300;
+            slider.style.transform = `translateX(-${scrollAmount}px)`;
+        }
+
+        function slideLeft() {
+            const slider = document.getElementById("slider");
+            scrollAmount -= 300;
+            if (scrollAmount < 0) scrollAmount = 0;
+            slider.style.transform = `translateX(-${scrollAmount}px)`;
+        }
+
+
+        let scrollAmount_2 = 0;
+
+        function slideRight_1() {
+            const slider = document.getElementById("slider_1");
+            scrollAmount_2+= 300;
+            slider.style.transform = `translateX(-${scrollAmount_2}px)`;
+        }
+
+        function slideLeft_1() {
+            const slider = document.getElementById("slider_1");
+            scrollAmount_2 -= 300;
+            if (scrollAmount_2 < 0) scrollAmount_2 = 0;
+            slider.style.transform = `translateX(-${scrollAmount_2}px)`;
+        }
+    </script>
+</body>
+</html>
