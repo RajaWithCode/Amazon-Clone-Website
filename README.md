@@ -18,8 +18,6 @@ This is a responsive Amazon clone website created using HTML, CSS, JavaScript an
 - HTML5
 - CSS3
 - JavaScript
-- React.js
-- Firebase (if used)
 
 ## Screenshots
 
